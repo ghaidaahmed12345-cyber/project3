@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creative Touch — مصممة جرافيك ومديرة فنية</title>
+  <meta name="description" content="Creative Touch — ملف أعمال ليلى حسن، مصممة جرافيك ومديرة فنية. هويات بصرية، تغليف، مطبوعات وتصاميم رقمية بلمسة ناعمة وفاخرة.">
+  <meta name="theme-color" content="#F8F3EC">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%232A2026'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='24' fill='%23F3DEDA' text-anchor='middle'%3ECT%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Tajawal:wght@300;400;500;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        if (localStorage.getItem('ct-lang') === 'en') {
+          document.documentElement.lang = 'en';
+          document.documentElement.dir = 'ltr';
+        }
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">تخطَّ إلى المحتوى</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="logo" aria-label="Creative Touch">
+        <span class="logo__mark">CT</span>
+        <span class="logo__text">Creative Touch
+          <span class="logo__sub" data-i18n="logo.sub">Graphic Design Studio</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#home" class="nav__link is-active" data-i18n="nav.home">الرئيسية</a>
+        <a href="#about" class="nav__link" data-i18n="nav.about">من أنا</a>
+        <a href="#work" class="nav__link" data-i18n="nav.work">الأعمال</a>
+        <a href="#skills" class="nav__link" data-i18n="nav.skills">المهارات</a>
+        <a href="#contact" class="nav__link" data-i18n="nav.contact">تواصل معي</a>
+      </nav>
+
+      <div class="nav__actions">
+        <div class="lang" role="group" aria-label="Language / اللغة">
+          <button class="lang__btn is-active" type="button" data-lang="ar" aria-pressed="true">ع</button>
+          <span class="lang__sep" aria-hidden="true"></span>
+          <button class="lang__btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a href="#contact" class="btn btn--dark btn--sm nav__cta"><span data-i18n="nav.cta">لنتحدث</span></a>
+        <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu" data-i18n-aria="a11y.openMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <nav class="mobile-menu__nav" aria-label="Mobile">
+        <a href="#home" data-i18n="nav.home">الرئيسية</a>
+        <a href="#about" data-i18n="nav.about">من أنا</a>
+        <a href="#work" data-i18n="nav.work">الأعمال</a>
+        <a href="#skills" data-i18n="nav.skills">المهارات</a>
+        <a href="#contact" data-i18n="nav.contact">تواصل معي</a>
+      </nav>
+      <div class="mobile-menu__footer">
+        <a href="mailto:hello@creativetouch.studio">hello@creativetouch.studio</a>
+        <div class="mobile-menu__socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://behance.net" target="_blank" rel="noopener">Behance</a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="hero__blob hero__blob--1"></span>
+        <span class="hero__blob hero__blob--2"></span>
+        <span class="hero__ring"></span>
+      </div>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow reveal">
+            <span class="eyebrow__line"></span>
+            <span data-i18n="hero.eyebrow">أهلاً بكِ في عالمي الإبداعي</span>
+          </p>
+
+          <h1 class="hero__title reveal" style="--d:80ms">
+            <span data-i18n="hero.titleA">أصمّم علامات تجارية</span>
+            <em data-i18n="hero.titleB">بلمسة ناعمة.</em>
+          </h1>
+
+          <p class="hero__desc reveal" style="--d:160ms" data-i18n="hero.desc">مصمّمة جرافيك ومديرة فنية، أحوّل الأفكار إلى هويّات بصرية أنيقة وهادئة، تروي قصص العلامات وتترك أثرًا لا يُنسى.</p>
+
+          <div class="hero__actions reveal" style="--d:240ms">
+            <a href="#work" class="btn btn--dark">
+              <span data-i18n="hero.cta1">استكشفي أعمالي</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost" data-i18n="hero.cta2">تواصلي معي</a>
+          </div>
+
+          <div class="hero__stats reveal" style="--d:320ms">
+            <div class="stat">
+              <span class="stat__num" data-count="6">0</span><span class="stat__suffix">+</span>
+              <span class="stat__label" data-i18n="hero.stat1">سنوات من الخبرة</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="120">0</span><span class="stat__suffix">+</span>
+              <span class="stat__label" data-i18n="hero.stat2">مشروعًا منجزًا</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="45">0</span><span class="stat__suffix">+</span>
+              <span class="stat__label" data-i18n="hero.stat3">عميلًا سعيدًا</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" style="--d:200ms">
+          <div class="hero__frame">
+            <img src="assets/images/hero.svg" alt="لوحة إبداعية بألوان الكريم والوردي الباهت والموف" width="1000" height="1250" data-i18n-alt="alt.hero">
+          </div>
+
+          <div class="hero__card">
+            <span class="hero__card-title" data-i18n="hero.palette">لوحة الألوان</span>
+            <div class="swatches" aria-hidden="true">
+              <span style="--c:#F3DEDA"></span>
+              <span style="--c:#D9AFAE"></span>
+              <span style="--c:#B08FA5"></span>
+              <span style="--c:#6E5266"></span>
+              <span style="--c:#C0A06A"></span>
+            </div>
+          </div>
+
+          <div class="hero__avail">
+            <span class="hero__dot" aria-hidden="true"></span>
+            <span data-i18n="hero.available">متاحة لمشاريع جديدة</span>
+          </div>
+
+          <div class="hero__badge-wrap" aria-hidden="true">
+            <svg class="hero__badge" viewBox="0 0 120 120">
+              <defs>
+                <path id="badgeCircle" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/>
+              </defs>
+              <g class="hero__badge-spin">
+                <text class="hero__badge-text">
+                  <textPath href="#badgeCircle" startOffset="0">GRAPHIC DESIGNER • VISUAL STORYTELLER • </textPath>
+                </text>
+              </g>
+              <circle cx="60" cy="60" r="24" fill="#2A2026"/>
+              <text x="60" y="67" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#F8F3EC">CT</text>
+            </svg>
+          </div>
+
+          <span class="hero__side" data-i18n="hero.side">ملف أعمال — 2026</span>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about" data-i18n-aria="a11y.scroll">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-text" data-i18n="hero.scroll">مرري للأسفل</span>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marqueeTrack"></div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__visual reveal">
+            <div class="about__frame">
+              <img src="assets/images/about.svg" alt="مكتب مصممة الجرافيك: دفتر رسم ولوحة ألوان وجهاز لوحي" width="1000" height="1250" loading="lazy" data-i18n-alt="alt.about">
+            </div>
+            <div class="about__exp">
+              <span class="about__exp-num">6+</span>
+              <span class="about__exp-label" data-i18n="about.yearsLabel">سنوات في التصميم الجرافيكي</span>
+            </div>
+            <blockquote class="about__quote">
+              <p data-i18n="about.quote">«التصميم هو السفير الصامت لعلامتك.»</p>
+              <cite>— Paul Rand</cite>
+            </blockquote>
+          </div>
+
+          <div class="about__content">
+            <p class="eyebrow">
+              <span class="eyebrow__num">01</span>
+              <span class="eyebrow__line"></span>
+              <span data-i18n="about.label">من أنا</span>
+            </p>
+            <h2 class="section__title">
+              <span data-i18n="about.titleA">مصمّمة تؤمن بأن</span>
+              <em data-i18n="about.titleB">الجمال في التفاصيل.</em>
+            </h2>
+            <p class="lead" data-i18n="about.p1">مرحبًا، أنا ليلى حسن — مصمّمة جرافيك ومديرة فنية مقيمة في دبي. منذ أكثر من ست سنوات، أساعد العلامات الطموحة على التعبير عن نفسها من خلال هويّات بصرية مدروسة، وتغليف يلامس الحواس، وتصاميم رقمية تتنفّس مساحة وهدوءًا.</p>
+            <p class="muted" data-i18n="about.p2">أستلهم من الهدوء، والضوء الطبيعي، والألوان الترابية الناعمة. أؤمن أن التصميم الجيد لا يصرخ؛ بل يهمس بوضوح، ويبقى في الذاكرة.</p>
+
+            <div class="tools">
+              <span class="tools__label" data-i18n="about.tools">البرامج التي أستخدمها</span>
+              <div class="tools__grid">
+                <div class="tool">
+                  <span class="tool__mark">Ps</span>
+                  <span class="tool__name">Adobe Photoshop</span>
+                </div>
+                <div class="tool">
+                  <span class="tool__mark">Ai</span>
+                  <span class="tool__name">Adobe Illustrator</span>
+                </div>
+                <div class="tool">
+                  <span class="tool__mark">Cv</span>
+                  <span class="tool__name">Canva</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__sign">
+              <span class="about__sign-name">Layla Hassan</span>
+              <span class="about__sign-role" data-i18n="about.role">المؤسِّسة والمديرة الفنية</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">
+              <span class="eyebrow__num">02</span>
+              <span class="eyebrow__line"></span>
+              <span data-i18n="work.label">معرض الأعمال</span>
+            </p>
+            <h2 class="section__title">
+              <span data-i18n="work.titleA">أعمال مختارة،</span>
+              <em data-i18n="work.titleB">صُنعت بعناية.</em>
+            </h2>
+          </div>
+          <p class="section__desc" data-i18n="work.desc">مجموعة من المشاريع التي جمعت بين الاستراتيجية والذوق البصري — من الهوية إلى التغليف والتصاميم الرقمية.</p>
+        </div>
+
+        <div class="filters" id="filters" role="group" aria-label="Portfolio filters"></div>
+        <div class="work__grid" id="workGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">
+              <span class="eyebrow__num">03</span>
+              <span class="eyebrow__line"></span>
+              <span data-i18n="skills.label">المهارات</span>
+            </p>
+            <h2 class="section__title">
+              <span data-i18n="skills.titleA">أدواتي في</span>
+              <em data-i18n="skills.titleB">صناعة الجمال.</em>
+            </h2>
+          </div>
+          <p class="section__desc" data-i18n="skills.desc">مزيج من الحسّ الفني والانضباط البصري، أطبّقه في كل تفصيل — من اختيار الحرف إلى بناء الشبكة.</p>
+        </div>
+
+        <div class="skills__grid">
+          <div class="skills__list">
+            <div class="skill" data-value="96">
+              <div class="skill__head">
+                <span class="skill__num">01</span>
+                <h3 class="skill__name" data-i18n="skills.s1">التصميم الجرافيكي</h3>
+                <span class="skill__pct">96%</span>
+              </div>
+              <div class="skill__bar"><span class="skill__fill"></span></div>
+            </div>
+            <div class="skill" data-value="94">
+              <div class="skill__head">
+                <span class="skill__num">02</span>
+                <h3 class="skill__name" data-i18n="skills.s2">الهوية البصرية</h3>
+                <span class="skill__pct">94%</span>
+              </div>
+              <div class="skill__bar"><span class="skill__fill"></span></div>
+            </div>
+            <div class="skill" data-value="90">
+              <div class="skill__head">
+                <span class="skill__num">03</span>
+                <h3 class="skill__name" data-i18n="skills.s3">التايبوغرافي</h3>
+                <span class="skill__pct">90%</span>
+              </div>
+              <div class="skill__bar"><span class="skill__fill"></span></div>
+            </div>
+            <div class="skill" data-value="92">
+              <div class="skill__head">
+                <span class="skill__num">04</span>
+                <h3 class="skill__name" data-i18n="skills.s4">نظرية الألوان</h3>
+                <span class="skill__pct">92%</span>
+              </div>
+              <div class="skill__bar"><span class="skill__fill"></span></div>
+            </div>
+            <div class="skill" data-value="89">
+              <div class="skill__head">
+                <span class="skill__num">05</span>
+                <h3 class="skill__name" data-i18n="skills.s5">التنسيقات الإبداعية</h3>
+                <span class="skill__pct">89%</span>
+              </div>
+              <div class="skill__bar"><span class="skill__fill"></span></div>
+            </div>
+          </div>
+
+          <aside class="skills__aside">
+            <div class="skill-card reveal">
+              <div class="skill-card__head">
+                <span data-i18n="skills.palette">لوحة الألوان</span>
+                <span class="skill-card__index">05</span>
+              </div>
+              <div class="palette">
+                <div class="palette__item"><span style="--c:#F3DEDA"></span><small>#F3DEDA</small></div>
+                <div class="palette__item"><span style="--c:#D9AFAE"></span><small>#D9AFAE</small></div>
+                <div class="palette__item"><span style="--c:#B08FA5"></span><small>#B08FA5</small></div>
+                <div class="palette__item"><span style="--c:#6E5266"></span><small>#6E5266</small></div>
+                <div class="palette__item"><span style="--c:#C0A06A"></span><small>#C0A06A</small></div>
+              </div>
+              <p class="skill-card__note" data-i18n="skills.paletteDesc">نغمة ناعمة، دافئة، خالدة.</p>
+            </div>
+
+            <div class="skill-card skill-card--type reveal" style="--d:100ms">
+              <div class="skill-card__head">
+                <span data-i18n="skills.type">التايبوغرافي</span>
+                <span class="skill-card__index">Aa</span>
+              </div>
+              <div class="type-specimen" aria-hidden="true">Aa</div>
+              <div class="type-rows">
+                <div class="type-row">
+                  <span data-i18n="skills.typeSerif">سيريف للعاطفة</span>
+                  <small>Cormorant Garamond</small>
+                </div>
+                <div class="type-row">
+                  <span data-i18n="skills.typeSans">وسانس للوضوح</span>
+                  <small>Jost · Tajawal</small>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info">
+            <p class="eyebrow eyebrow--light">
+              <span class="eyebrow__num">04</span>
+              <span class="eyebrow__line"></span>
+              <span data-i18n="contact.label">تواصل معي</span>
+            </p>
+            <h2 class="contact__title">
+              <span data-i18n="contact.titleA">لنصنع شيئًا</span>
+              <em data-i18n="contact.titleB">جميلاً معًا.</em>
+            </h2>
+            <p class="contact__desc" data-i18n="contact.desc">لديك مشروع أو فكرة؟ أحب أن أسمع عنها. أرد عادةً خلال ٢٤ ساعة.</p>
+
+            <ul class="contact__list">
+              <li>
+                <span class="contact__label" data-i18n="contact.email">البريد الإلكتروني</span>
+                <a href="mailto:hello@creativetouch.studio">hello@creativetouch.studio</a>
+              </li>
+              <li>
+                <span class="contact__label" data-i18n="contact.phone">الهاتف</span>
+                <a href="tel:+971501234567" dir="ltr">+971 50 123 4567</a>
+              </li>
+              <li>
+                <span class="contact__label" data-i18n="contact.location">الموقع</span>
+                <span data-i18n="contact.locationValue">دبي، الإمارات العربية المتحدة</span>
+              </li>
+            </ul>
+
+            <div class="socials">
+              <span class="contact__label" data-i18n="contact.follow">تابعيني</span>
+              <div class="socials__row">
+                <a href="https://instagram.com" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
+                <a href="https://behance.net" target="_blank" rel="noopener">Behance <span aria-hidden="true">↗</span></a>
+                <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest <span aria-hidden="true">↗</span></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+
+          <form class="form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name" data-i18n="contact.formName">الاسم الكامل</label>
+              <input id="name" name="name" type="text" required autocomplete="name" placeholder="اسمك" data-i18n-placeholder="contact.namePlaceholder">
+            </div>
+            <div class="field">
+              <label for="email" data-i18n="contact.formEmail">البريد الإلكتروني</label>
+              <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" dir="ltr">
+            </div>
+            <div class="field field--full">
+              <label for="subject" data-i18n="contact.formSubject">نوع المشروع</label>
+              <select id="subject" name="subject">
+                <option value="branding" data-i18n="contact.optBranding">هوية بصرية</option>
+                <option value="packaging" data-i18n="contact.optPackaging">تصميم عبوات</option>
+                <option value="website" data-i18n="contact.optWebsite">موقع إلكتروني</option>
+                <option value="other" data-i18n="contact.optOther">شيء آخر</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="message" data-i18n="contact.formMessage">رسالتك</label>
+              <textarea id="message" name="message" rows="4" required placeholder="أخبريني عن مشروعك..." data-i18n-placeholder="contact.messagePlaceholder"></textarea>
+            </div>
+            <button type="submit" class="btn btn--blush form__submit">
+              <span data-i18n="contact.submit">إرسال الرسالة</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="form__note" data-i18n="contact.note">بالضغط على الإرسال، أنت توافقين على أن نتواصل معك بخصوص مشروعك.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#home" class="logo logo--footer" aria-label="Creative Touch">
+        <span class="logo__mark">CT</span>
+        <span class="logo__text">Creative Touch
+          <span class="logo__sub" data-i18n="logo.sub">Graphic Design Studio</span>
+        </span>
+      </a>
+      <p class="footer__copy"><span data-i18n="footer.rights">© 2026 Creative Touch. جميع الحقوق محفوظة.</span> <span data-i18n="footer.love">صُمم بحب وذوق.</span></p>
+      <button class="footer__top" id="backTop" type="button">
+        <span data-i18n="footer.top">إلى الأعلى</span>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lbTitle" aria-hidden="true">
+    <div class="lightbox__backdrop" data-close></div>
+    <div class="lightbox__panel">
+      <button class="lightbox__close" id="lbClose" type="button" data-close aria-label="Close" data-i18n-aria="a11y.close">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <div class="lightbox__media">
+        <img id="lbImage" src="" alt="">
+      </div>
+      <div class="lightbox__content">
+        <span class="lightbox__cat" id="lbCat"></span>
+        <h3 class="lightbox__title" id="lbTitle"></h3>
+        <p class="lightbox__desc" id="lbDesc"></p>
+        <dl class="lightbox__meta">
+          <div><dt data-i18n="lightbox.client">العميل</dt><dd id="lbClient"></dd></div>
+          <div><dt data-i18n="lightbox.year">السنة</dt><dd id="lbYear"></dd></div>
+          <div><dt data-i18n="lightbox.services">الخدمات</dt><dd id="lbServices"></dd></div>
+        </dl>
+        <div class="lightbox__nav">
+          <button type="button" id="lbPrev" class="lightbox__arrow">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="lightbox.prev">السابق</span>
+          </button>
+          <span class="lightbox__count" id="lbCount">01 / 08</span>
+          <button type="button" id="lbNext" class="lightbox__arrow">
+            <span data-i18n="lightbox.next">التالي</span>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
