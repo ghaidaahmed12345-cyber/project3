@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Social media design mockup on two phones">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1E0DC"/>
+      <stop offset=".5" stop-color="#E6CDD2"/>
+      <stop offset="1" stop-color="#C9A6B2"/>
+    </linearGradient>
+    <radialGradient id="light" cx=".28" cy=".14" r=".8">
+      <stop offset="0" stop-color="#FFF8F1" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#FFF8F1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EBCFCA"/>
+      <stop offset="1" stop-color="#C79FAC"/>
+    </linearGradient>
+    <linearGradient id="tile2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8C6F84"/>
+      <stop offset="1" stop-color="#5E4557"/>
+    </linearGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="46"/>
+    </filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="28" stdDeviation="32" flood-color="#3E2A36" flood-opacity=".26"/>
+    </filter>
+    <filter id="shadowSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#3E2A36" flood-opacity=".18"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".4"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <rect width="1200" height="1500" fill="url(#light)"/>
+  <circle cx="200" cy="220" r="280" fill="#F7E7DF" opacity=".55" filter="url(#blur)"/>
+  <circle cx="1080" cy="1240" r="300" fill="#7E5F74" opacity=".18" filter="url(#blur)"/>
+
+  <!-- decorative arcs -->
+  <circle cx="600" cy="700" r="430" fill="none" stroke="#FBF3EC" stroke-width="1" opacity=".45"/>
+  <circle cx="600" cy="700" r="500" fill="none" stroke="#FBF3EC" stroke-width="1" opacity=".25"/>
+
+  <!-- phone back -->
+  <g transform="rotate(8 830 700)" filter="url(#shadow)">
+    <rect x="660" y="300" width="340" height="720" rx="46" fill="#241C22"/>
+    <rect x="676" y="316" width="308" height="688" rx="34" fill="#FBF6EF"/>
+    <rect x="770" y="330" width="120" height="12" rx="6" fill="#241C22" opacity=".85"/>
+    <text x="704" y="386" font-family="Georgia, serif" font-size="24" fill="#2A2126">aurelia.</text>
+    <circle cx="930" cy="376" r="13" fill="none" stroke="#2A2126" stroke-width="1.5"/>
+    <circle cx="960" cy="376" r="4" fill="#2A2126"/>
+    <circle cx="942" cy="376" r="4" fill="#2A2126"/>
+    <rect x="704" y="410" width="252" height="286" rx="14" fill="url(#tile2)"/>
+    <path d="M704 610 C 760 520 820 660 900 560 S 950 640 956 690 L 956 696 L 704 696 Z" fill="#3E2D3A" opacity=".45"/>
+    <circle cx="880" cy="480" r="46" fill="#EFD8D3" opacity=".9"/>
+    <text x="728" y="590" font-family="Georgia, serif" font-size="34" font-style="italic" fill="#F7EDE5">New ritual</text>
+    <text x="730" y="620" font-family="Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="4" fill="#D8C4C0">BOTANICAL GLOW</text>
+    <g fill="#DCCAC1">
+      <rect x="704" y="722" width="180" height="4" rx="2"/>
+      <rect x="704" y="738" width="130" height="4" rx="2"/>
+    </g>
+    <g>
+      <rect x="704" y="770" width="78" height="78" rx="8" fill="#EFD8D3"/>
+      <rect x="791" y="770" width="78" height="78" rx="8" fill="#D9AFAE"/>
+      <rect x="878" y="770" width="78" height="78" rx="8" fill="#B08FA5"/>
+      <rect x="704" y="857" width="78" height="78" rx="8" fill="#C0A06A"/>
+      <rect x="791" y="857" width="78" height="78" rx="8" fill="#6E5266"/>
+      <rect x="878" y="857" width="78" height="78" rx="8" fill="#F3E4DC"/>
+    </g>
+    <rect x="748" y="978" width="120" height="4" rx="2" fill="#241C22" opacity=".5"/>
+  </g>
+
+  <!-- phone front -->
+  <g transform="rotate(-9 380 760)" filter="url(#shadow)">
+    <rect x="190" y="390" width="350" height="760" rx="48" fill="#241C22"/>
+    <rect x="206" y="406" width="318" height="728" rx="36" fill="#FCF8F2"/>
+    <rect x="300" y="420" width="130" height="12" rx="6" fill="#241C22" opacity=".85"/>
+    <text x="236" y="486" font-family="Georgia, serif" font-size="26" fill="#2A2126">aurelia.</text>
+    <rect x="440" y="468" width="52" height="20" rx="10" fill="#8C6F84"/>
+    <text x="466" y="482" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="1" fill="#FBF6EF">FOLLOW</text>
+    <rect x="236" y="512" width="258" height="250" rx="14" fill="url(#tile)"/>
+    <path d="M236 512 h258 v250 h-258 z" fill="#A9869B" opacity=".18"/>
+    <path d="M300 762 V 640 a 65 65 0 0 1 130 0 V 762 Z" fill="#F7E7E1" opacity=".95"/>
+    <circle cx="420" cy="580" r="26" fill="#C0A06A" opacity=".85"/>
+    <text x="262" y="712" font-family="Georgia, serif" font-size="26" font-style="italic" fill="#3B2A35">Soft glow,</text>
+    <text x="262" y="742" font-family="Georgia, serif" font-size="26" font-style="italic" fill="#3B2A35">every day.</text>
+    <g fill="#DCCAC1">
+      <rect x="236" y="790" width="200" height="4" rx="2"/>
+      <rect x="236" y="806" width="150" height="4" rx="2"/>
+    </g>
+    <g>
+      <rect x="236" y="842" width="78" height="78" rx="8" fill="#D9AFAE"/>
+      <rect x="326" y="842" width="78" height="78" rx="8" fill="#6E5266"/>
+      <rect x="416" y="842" width="78" height="78" rx="8" fill="#EFD8D3"/>
+      <rect x="236" y="930" width="78" height="78" rx="8" fill="#B08FA5"/>
+      <rect x="326" y="930" width="78" height="78" rx="8" fill="#C0A06A"/>
+      <rect x="416" y="930" width="78" height="78" rx="8" fill="#F6E9E1"/>
+    </g>
+    <rect x="300" y="1074" width="140" height="5" rx="2.5" fill="#241C22" opacity=".55"/>
+  </g>
+
+  <!-- like bubble -->
+  <g filter="url(#shadowSoft)">
+    <circle cx="700" cy="1150" r="56" fill="#FFFDF8"/>
+    <path d="M700 1176 c-26 -16 -40 -30 -40 -46 a 18 18 0 0 1 32 -10 a 18 18 0 0 1 32 10 c0 16 -14 30 -40 46 Z" fill="#C98B95"/>
+    <rect x="640" y="1222" width="120" height="38" rx="19" fill="#2A2126"/>
+    <text x="700" y="1247" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" letter-spacing="1" fill="#F7EDE5">+ 2.4k</text>
+  </g>
+
+  <!-- floating tag -->
+  <g transform="rotate(-6 160 330)" filter="url(#shadowSoft)">
+    <rect x="58" y="278" width="210" height="66" rx="33" fill="#FBF6EF"/>
+    <circle cx="92" cy="311" r="8" fill="#B08FA5"/>
+    <text x="112" y="316" font-family="Helvetica Neue, Arial, sans-serif" font-size="11" letter-spacing="3" fill="#3B2A35">SOCIAL MEDIA</text>
+  </g>
+
+  <rect width="1200" height="1500" filter="url(#grain)" opacity=".15"/>
+</svg>

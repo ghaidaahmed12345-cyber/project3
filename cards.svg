@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" width="1600" height="1100" role="img" aria-label="Business card design mockup with gold foil">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2E8DD"/>
+      <stop offset=".55" stop-color="#EADDD0"/>
+      <stop offset="1" stop-color="#DCC8B8"/>
+    </linearGradient>
+    <linearGradient id="cardDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#37292F"/>
+      <stop offset="1" stop-color="#221A1F"/>
+    </linearGradient>
+    <linearGradient id="cardCream" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFCF6"/>
+      <stop offset="1" stop-color="#F4E9DD"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E2C892"/>
+      <stop offset=".5" stop-color="#C0A06A"/>
+      <stop offset="1" stop-color="#9C7C46"/>
+    </linearGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="30" stdDeviation="30" flood-color="#4A3546" flood-opacity=".28"/>
+    </filter>
+    <filter id="shadowSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#4A3546" flood-opacity=".16"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".4"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#bg)"/>
+  <circle cx="1330" cy="200" r="300" fill="#FBF2E8" opacity=".6" filter="url(#blur)"/>
+  <circle cx="220" cy="900" r="280" fill="#B08FA5" opacity=".18" filter="url(#blur)"/>
+
+  <!-- linen texture lines -->
+  <g stroke="#CDB9A8" stroke-width=".6" opacity=".28">
+    <path d="M0 140 H1600 M0 280 H1600 M0 420 H1600 M0 560 H1600 M0 700 H1600 M0 840 H1600 M0 980 H1600"/>
+    <path d="M140 0 V1100 M280 0 V1100 M420 0 V1100 M560 0 V1100 M700 0 V1100 M840 0 V1100 M980 0 V1100 M1120 0 V1100 M1260 0 V1100 M1400 0 V1100"/>
+  </g>
+
+  <!-- back card mauve -->
+  <g transform="rotate(-16 800 620)" filter="url(#shadowSoft)">
+    <rect x="470" y="420" width="640" height="370" rx="12" fill="#D9AFAE"/>
+    <rect x="490" y="440" width="600" height="330" rx="8" fill="none" stroke="#F3E0DA" stroke-width="1" opacity=".6"/>
+  </g>
+
+  <!-- dark card -->
+  <g transform="rotate(-8 780 600)" filter="url(#shadow)">
+    <rect x="440" y="380" width="680" height="390" rx="12" fill="url(#cardDark)"/>
+    <rect x="462" y="402" width="636" height="346" rx="7" fill="none" stroke="url(#gold)" stroke-width="1" opacity=".7"/>
+    <text x="510" y="540" font-family="Georgia, serif" font-size="96" letter-spacing="8" fill="url(#gold)">CT</text>
+    <rect x="512" y="566" width="80" height="1.2" fill="#C0A06A"/>
+    <text x="512" y="612" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" letter-spacing="10" fill="#EFE4DA">CREATIVE TOUCH</text>
+    <text x="514" y="644" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" letter-spacing="4" fill="#A9928A">GRAPHIC DESIGN STUDIO</text>
+    <g fill="#C0A06A" opacity=".85">
+      <circle cx="1010" cy="470" r="3"/>
+      <circle cx="1030" cy="470" r="3"/>
+      <circle cx="1050" cy="470" r="3"/>
+    </g>
+    <text x="512" y="704" font-family="Georgia, serif" font-size="15" font-style="italic" fill="#B9A79C">design with a soft touch</text>
+  </g>
+
+  <!-- cream card -->
+  <g transform="rotate(7 900 760)" filter="url(#shadow)">
+    <rect x="700" y="620" width="680" height="390" rx="12" fill="url(#cardCream)"/>
+    <rect x="722" y="642" width="636" height="346" rx="7" fill="none" stroke="#DCC4AE" stroke-width=".9"/>
+    <text x="770" y="742" font-family="Georgia, serif" font-size="44" fill="#2A2126">Layla Hassan</text>
+    <rect x="772" y="762" width="70" height="1.4" fill="#C0A06A"/>
+    <text x="772" y="796" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" letter-spacing="4" fill="#8C6F84">GRAPHIC DESIGNER · ART DIRECTOR</text>
+    <g fill="#BBA998">
+      <rect x="772" y="836" width="230" height="3" rx="1.5"/>
+      <rect x="772" y="856" width="180" height="3" rx="1.5"/>
+      <rect x="772" y="876" width="205" height="3" rx="1.5"/>
+    </g>
+    <text x="772" y="930" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" letter-spacing="3" fill="#8C6F84">HELLO@CREATIVETOUCH.STUDIO</text>
+    <g transform="translate(1290 900)">
+      <circle r="30" fill="none" stroke="#D9AFAE" stroke-width="1.3"/>
+      <text y="7" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#8C6F84">CT</text>
+    </g>
+  </g>
+
+  <!-- gold paperclip -->
+  <g stroke="url(#gold)" fill="none" stroke-width="5" stroke-linecap="round" filter="url(#shadowSoft)" opacity=".95">
+    <path d="M300 220 v 180 a 40 40 0 0 0 80 0 V 240 a 26 26 0 0 0 -52 0 v 170 a 12 12 0 0 0 24 0 V 270"/>
+  </g>
+
+  <!-- pen -->
+  <g transform="rotate(-34 1320 860)" filter="url(#shadowSoft)">
+    <rect x="1290" y="600" width="18" height="330" rx="9" fill="#2A2126"/>
+    <path d="M1290 930 h18 l -9 40 Z" fill="#C0A06A"/>
+    <rect x="1290" y="660" width="18" height="26" fill="#C0A06A"/>
+  </g>
+
+  <rect width="1600" height="1100" filter="url(#grain)" opacity=".15"/>
+</svg>

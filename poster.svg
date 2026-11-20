@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Framed art exhibition poster mockup">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F2E8DC"/>
+      <stop offset=".6" stop-color="#EADFD2"/>
+      <stop offset="1" stop-color="#DFCFC0"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF9EF" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#FFF9EF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="poster" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBF4E9"/>
+      <stop offset="1" stop-color="#F3E7DA"/>
+    </linearGradient>
+    <linearGradient id="arch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B08FA5"/>
+      <stop offset="1" stop-color="#8C6F84"/>
+    </linearGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="34"/>
+    </filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="10" dy="30" stdDeviation="30" flood-color="#4A3546" flood-opacity=".28"/>
+    </filter>
+    <filter id="shadowSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#4A3546" flood-opacity=".16"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".4"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+
+  <!-- sunlight -->
+  <path d="M-100 -100 L 520 -100 L 120 900 L -100 1100 Z" fill="url(#sun)"/>
+  <path d="M700 -100 L 900 -100 L 470 900 L 300 1000 Z" fill="url(#sun)" opacity=".7"/>
+
+  <!-- plant shadows -->
+  <g fill="#9A7F6C" opacity=".16" filter="url(#blur)">
+    <ellipse cx="1080" cy="380" rx="24" ry="120" transform="rotate(24 1080 380)"/>
+    <ellipse cx="1140" cy="560" rx="18" ry="90" transform="rotate(38 1140 560)"/>
+    <ellipse cx="1010" cy="240" rx="20" ry="100" transform="rotate(-14 1010 240)"/>
+  </g>
+
+  <!-- frame -->
+  <g filter="url(#shadow)">
+    <rect x="330" y="250" width="560" height="760" rx="2" fill="#2A2126"/>
+    <rect x="352" y="272" width="516" height="716" fill="url(#poster)"/>
+
+    <!-- poster composition -->
+    <path d="M420 900 V 620 a 150 150 0 0 1 300 0 V 900 Z" fill="url(#arch)"/>
+    <circle cx="650" cy="620" r="104" fill="#EBCFCA"/>
+    <circle cx="650" cy="620" r="104" fill="none" stroke="#C0A06A" stroke-width="1.2"/>
+    <path d="M420 900 h 300" stroke="#C0A06A" stroke-width="1.2"/>
+    <text x="404" y="380" font-family="Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="5" fill="#8C6F84">CONTEMPORARY DESIGN</text>
+    <text x="404" y="470" font-family="Georgia, serif" font-size="104" letter-spacing="2" fill="#2A2126">FORM</text>
+    <text x="404" y="510" font-family="Georgia, serif" font-size="104" letter-spacing="2" fill="#2A2126" font-style="italic">&amp; FEEL</text>
+    <text x="406" y="558" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" letter-spacing="4" fill="#A9869B">AN EXHIBITION OF SOFT GEOMETRY</text>
+    <text x="406" y="952" font-family="Georgia, serif" font-size="14" font-style="italic" fill="#6F625C">September 12 — October 30</text>
+    <text x="830" y="952" text-anchor="end" font-family="Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="3" fill="#8C6F84">GALLERY 07</text>
+  </g>
+
+  <!-- small leaning print -->
+  <g transform="rotate(5 940 1080)" filter="url(#shadowSoft)">
+    <rect x="820" y="960" width="280" height="330" fill="#2A2126"/>
+    <rect x="836" y="976" width="248" height="298" fill="#F6EDE1"/>
+    <path d="M900 1210 V 1080 a 60 60 0 0 1 120 0 V 1210 Z" fill="#D9AFAE"/>
+    <circle cx="960" cy="1090" r="26" fill="#8C6F84"/>
+    <text x="960" y="1040" text-anchor="middle" font-family="Georgia, serif" font-size="22" letter-spacing="3" fill="#2A2126">N° 07</text>
+    <text x="960" y="1240" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="8" letter-spacing="3" fill="#8C6F84">STUDY IN BLUSH</text>
+  </g>
+
+  <!-- floor line -->
+  <path d="M0 1180 H 1200" stroke="#CBB8A6" stroke-width="1" opacity=".5"/>
+  <ellipse cx="600" cy="1290" rx="360" ry="30" fill="#8C6F84" opacity=".12" filter="url(#blur)"/>
+
+  <rect width="1200" height="1500" filter="url(#grain)" opacity=".15"/>
+</svg>

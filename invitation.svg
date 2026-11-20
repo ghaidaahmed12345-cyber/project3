@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Luxury wedding invitation suite mockup">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F1E6DC"/>
+      <stop offset=".55" stop-color="#EADDD1"/>
+      <stop offset="1" stop-color="#DECBBE"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFDF8"/>
+      <stop offset="1" stop-color="#F8EFE5"/>
+    </linearGradient>
+    <linearGradient id="env" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6EAE2"/>
+      <stop offset="1" stop-color="#EAD6CC"/>
+    </linearGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="42"/>
+    </filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#4A3546" flood-opacity=".22"/>
+    </filter>
+    <filter id="shadowSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#4A3546" flood-opacity=".16"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".4"/></feComponentTransfer>
+    </filter>
+    <pattern id="linen" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M0 0 H6 M0 0 V6" stroke="#C9B3A3" stroke-width=".5" opacity=".25"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <rect width="1200" height="1500" fill="url(#linen)" opacity=".6"/>
+  <circle cx="150" cy="220" r="280" fill="#FBF2E9" opacity=".6" filter="url(#blur)"/>
+  <circle cx="1060" cy="1280" r="280" fill="#B08FA5" opacity=".18" filter="url(#blur)"/>
+
+  <!-- envelope -->
+  <g transform="rotate(4 620 1120)" filter="url(#shadow)">
+    <rect x="220" y="880" width="780" height="430" rx="4" fill="url(#env)"/>
+    <path d="M220 886 L610 1150 L1000 886" fill="none" stroke="#D6BBAE" stroke-width="2"/>
+    <path d="M220 1306 L560 1050 M1000 1306 L660 1050" fill="none" stroke="#D6BBAE" stroke-width="2"/>
+    <path d="M240 900 h740" stroke="#C0A06A" stroke-width="1" opacity=".6"/>
+  </g>
+
+  <!-- ribbon -->
+  <path d="M120 1240 C 300 1120 360 980 520 940 C 660 906 700 800 760 720" fill="none" stroke="#E3C4C2" stroke-width="26" opacity=".9"/>
+  <path d="M120 1240 C 300 1120 360 980 520 940 C 660 906 700 800 760 720" fill="none" stroke="#F6E6E1" stroke-width="8" opacity=".8"/>
+
+  <!-- invitation card -->
+  <g transform="rotate(-2 600 600)" filter="url(#shadow)">
+    <rect x="320" y="200" width="560" height="770" rx="2" fill="url(#paper)"/>
+    <rect x="342" y="222" width="516" height="726" fill="none" stroke="#D8BFA8" stroke-width="1.1"/>
+    <rect x="354" y="234" width="492" height="702" fill="none" stroke="#E8D7C6" stroke-width=".6"/>
+
+    <text x="600" y="306" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" letter-spacing="5" fill="#A9869B">TOGETHER WITH THEIR FAMILIES</text>
+
+    <text x="600" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="64" font-style="italic" fill="#2A2126">Amelia</text>
+    <text x="600" y="488" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#C0A06A">&amp;</text>
+    <text x="600" y="556" text-anchor="middle" font-family="Georgia, serif" font-size="64" font-style="italic" fill="#2A2126">Marcus</text>
+
+    <path d="M470 610 h260" stroke="#D8BFA8" stroke-width="1"/>
+    <circle cx="600" cy="610" r="2.6" fill="#C0A06A"/>
+
+    <text x="600" y="672" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="11" letter-spacing="6" fill="#8C6F84">SAVE THE DATE</text>
+    <text x="600" y="730" text-anchor="middle" font-family="Georgia, serif" font-size="30" letter-spacing="4" fill="#2A2126">12 · 09 · 2025</text>
+    <text x="600" y="770" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="3" fill="#A1907F">THE GARDEN ESTATE · FLORENCE</text>
+
+    <!-- floral line art -->
+    <g stroke="#B08FA5" fill="none" stroke-width="1.3" opacity=".8" stroke-linecap="round">
+      <path d="M390 860 c 40 -60 60 -120 50 -190"/>
+      <path d="M424 790 c -26 -12 -38 -34 -34 -58 c 22 4 34 26 34 58 Z"/>
+      <path d="M416 742 c 26 -12 38 -34 34 -58 c -22 4 -34 26 -34 58 Z"/>
+      <path d="M406 690 c -22 -12 -32 -32 -28 -52 c 20 4 30 24 28 52 Z"/>
+      <circle cx="440" cy="850" r="8"/>
+      <circle cx="420" cy="866" r="6"/>
+    </g>
+    <g stroke="#B08FA5" fill="none" stroke-width="1.3" opacity=".8" stroke-linecap="round" transform="translate(1200 0) scale(-1 1)">
+      <path d="M390 860 c 40 -60 60 -120 50 -190"/>
+      <path d="M424 790 c -26 -12 -38 -34 -34 -58 c 22 4 34 26 34 58 Z"/>
+      <path d="M416 742 c 26 -12 38 -34 34 -58 c -22 4 -34 26 -34 58 Z"/>
+      <path d="M406 690 c -22 -12 -32 -32 -28 -52 c 20 4 30 24 28 52 Z"/>
+      <circle cx="440" cy="850" r="8"/>
+      <circle cx="420" cy="866" r="6"/>
+    </g>
+  </g>
+
+  <!-- wax seal -->
+  <g filter="url(#shadowSoft)">
+    <circle cx="790" cy="900" r="56" fill="#A9869B"/>
+    <circle cx="790" cy="900" r="43" fill="none" stroke="#EADCE2" stroke-width="1.2" opacity=".7"/>
+    <text x="790" y="913" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#F8EFE7">A&amp;M</text>
+  </g>
+
+  <!-- dried rose -->
+  <g transform="rotate(-12 200 1330)">
+    <circle cx="200" cy="1330" r="46" fill="#C9A6A8" opacity=".55"/>
+    <circle cx="200" cy="1330" r="32" fill="none" stroke="#8C6F84" stroke-width="1" opacity=".5"/>
+    <circle cx="200" cy="1330" r="18" fill="none" stroke="#8C6F84" stroke-width="1" opacity=".5"/>
+    <path d="M240 1360 c 40 20 60 60 60 100" stroke="#8C6F84" stroke-width="2" fill="none" opacity=".5"/>
+  </g>
+
+  <rect width="1200" height="1500" filter="url(#grain)" opacity=".15"/>
+</svg>

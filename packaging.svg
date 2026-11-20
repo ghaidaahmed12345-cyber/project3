@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Luxury skincare packaging design mockup">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6EBE2"/>
+      <stop offset="1" stop-color="#E7D1C8"/>
+    </linearGradient>
+    <linearGradient id="arch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8E8E1"/>
+      <stop offset="1" stop-color="#EFD5CF"/>
+    </linearGradient>
+    <linearGradient id="boxFront" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F5DEDA"/>
+      <stop offset="1" stop-color="#E9C8C6"/>
+    </linearGradient>
+    <linearGradient id="boxSide" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9B0AF"/>
+      <stop offset="1" stop-color="#C99A9E"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6B4E63"/>
+      <stop offset=".45" stop-color="#93768A"/>
+      <stop offset="1" stop-color="#5B4053"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FDF6EE"/>
+      <stop offset=".6" stop-color="#F4E7DC"/>
+      <stop offset="1" stop-color="#E3CDBE"/>
+    </linearGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="44"/>
+    </filter>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="26" stdDeviation="24" flood-color="#4A3546" flood-opacity=".24"/>
+    </filter>
+    <filter id="shadowSoft" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#4A3546" flood-opacity=".16"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".4"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <path d="M250 1150 V 620 a 350 350 0 0 1 700 0 V 1150 Z" fill="url(#arch)" opacity=".85"/>
+  <circle cx="980" cy="240" r="260" fill="#DDB6BD" opacity=".35" filter="url(#blur)"/>
+  <circle cx="150" cy="1300" r="240" fill="#B08FA5" opacity=".2" filter="url(#blur)"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="600" cy="1235" rx="430" ry="46" fill="#7E5F74" opacity=".18" filter="url(#blur)"/>
+
+  <!-- back tube -->
+  <g transform="rotate(-7 300 950)" filter="url(#shadowSoft)">
+    <rect x="252" y="720" width="96" height="400" rx="48" fill="#EFD9D2"/>
+    <rect x="272" y="790" width="56" height="250" rx="28" fill="#FBF4EC" opacity=".9"/>
+    <text x="300" y="900" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="3" fill="#8C6F84" transform="rotate(-90 300 900)">AURELIA</text>
+  </g>
+
+  <!-- tall box -->
+  <g filter="url(#shadow)">
+    <rect x="470" y="540" width="300" height="620" rx="6" fill="url(#boxFront)"/>
+    <path d="M770 540 L846 586 L846 1206 L770 1160 Z" fill="url(#boxSide)"/>
+    <rect x="470" y="540" width="300" height="26" fill="#F9E9E4" opacity=".7"/>
+    <rect x="508" y="640" width="224" height="430" rx="2" fill="#FBF5EC" opacity=".92"/>
+    <text x="620" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="34" letter-spacing="4" fill="#3B2A35">AURELIA</text>
+    <rect x="560" y="742" width="120" height="1.2" fill="#C0A06A"/>
+    <text x="620" y="778" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="4" fill="#8C6F84">BOTANICAL RITUAL</text>
+    <path d="M620 830 v 120 M590 870 c -30 -14 -46 -38 -46 -62 c 28 2 46 24 46 62 Z M650 890 c 30 -14 46 -38 46 -62 c -28 2 -46 24 -46 62 Z" fill="none" stroke="#B08FA5" stroke-width="1.6"/>
+    <g fill="#D8C4BA">
+      <rect x="556" y="978" width="128" height="2.4" rx="1.2"/>
+      <rect x="576" y="994" width="88" height="2.4" rx="1.2"/>
+    </g>
+    <text x="620" y="1042" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="8" letter-spacing="3" fill="#A1907F">50 ML · 1.7 FL OZ</text>
+  </g>
+
+  <!-- dropper bottle -->
+  <g filter="url(#shadow)">
+    <rect x="806" y="742" width="52" height="90" rx="8" fill="#2E2429"/>
+    <rect x="826" y="800" width="12" height="120" rx="6" fill="#3A2C33"/>
+    <path d="M780 840 h 104 a 52 52 0 0 1 52 52 v 208 a 26 26 0 0 1 -26 26 h -156 a 26 26 0 0 1 -26 -26 v -208 a 52 52 0 0 1 52 -52 Z" fill="url(#glass)"/>
+    <rect x="792" y="920" width="104" height="150" rx="3" fill="#F7EEE4" opacity=".95"/>
+    <text x="844" y="966" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="2" fill="#3B2A35">Aurelia</text>
+    <rect x="812" y="982" width="64" height="1" fill="#C0A06A"/>
+    <text x="844" y="1012" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="7" letter-spacing="2" fill="#8C6F84">FACE SERUM</text>
+    <text x="844" y="1048" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="7" letter-spacing="2" fill="#A1907F">30 ML</text>
+  </g>
+
+  <!-- jar -->
+  <g filter="url(#shadow)">
+    <rect x="360" y="1000" width="250" height="210" rx="28" fill="url(#jar)"/>
+    <rect x="344" y="958" width="282" height="66" rx="16" fill="#C6A46B"/>
+    <rect x="344" y="958" width="282" height="20" rx="10" fill="#D8BA85" opacity=".8"/>
+    <rect x="398" y="1060" width="174" height="100" rx="2" fill="#FBF4EB" opacity=".9"/>
+    <text x="485" y="1102" text-anchor="middle" font-family="Georgia, serif" font-size="22" letter-spacing="3" fill="#3B2A35">AURELIA</text>
+    <text x="485" y="1126" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="7" letter-spacing="3" fill="#8C6F84">BODY CREAM</text>
+    <rect x="452" y="1138" width="66" height="1" fill="#C0A06A"/>
+  </g>
+
+  <!-- gold detail -->
+  <g opacity=".8">
+    <circle cx="200" cy="420" r="34" fill="none" stroke="#C0A06A" stroke-width="1.2"/>
+    <circle cx="200" cy="420" r="18" fill="none" stroke="#C0A06A" stroke-width="1.2"/>
+  </g>
+
+  <rect width="1200" height="1500" filter="url(#grain)" opacity=".15"/>
+</svg>

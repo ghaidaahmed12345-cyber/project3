@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Fine dining menu design mockup">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EFE5D9"/>
+      <stop offset=".5" stop-color="#E8DBCD"/>
+      <stop offset="1" stop-color="#DCC8B8"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDFAF3"/>
+      <stop offset="1" stop-color="#F6EEE1"/>
+    </linearGradient>
+    <linearGradient id="napkin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#DCC9B8"/>
+      <stop offset="1" stop-color="#C8B09C"/>
+    </linearGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#4A3546" flood-opacity=".22"/>
+    </filter>
+    <filter id="shadowSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#4A3546" flood-opacity=".14"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".4"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="1000" cy="260" r="300" fill="#F8EFE4" opacity=".5" filter="url(#blur)"/>
+  <circle cx="160" cy="1260" r="260" fill="#B08FA5" opacity=".16" filter="url(#blur)"/>
+
+  <!-- marble veins -->
+  <g fill="none" stroke="#CDBBAA" stroke-width="1.4" opacity=".55">
+    <path d="M-50 300 C 180 260 260 380 460 330 S 760 200 1250 260"/>
+    <path d="M-50 470 C 200 430 300 540 520 480 S 840 360 1250 420"/>
+    <path d="M-50 1120 C 220 1080 340 1180 600 1120 S 980 1020 1250 1080"/>
+    <path d="M-50 1260 C 260 1220 380 1320 660 1260 S 1000 1160 1250 1220"/>
+  </g>
+
+  <!-- napkin -->
+  <g transform="rotate(-8 260 1180)" filter="url(#shadowSoft)">
+    <rect x="60" y="1010" width="420" height="380" rx="6" fill="url(#napkin)"/>
+    <path d="M60 1100 h420 M60 1200 h420" stroke="#BEA592" stroke-width="1" opacity=".5"/>
+  </g>
+
+  <!-- menu card behind -->
+  <g transform="rotate(7 760 800)" filter="url(#shadow)">
+    <rect x="620" y="300" width="440" height="820" rx="3" fill="#8C6F84"/>
+    <text x="840" y="700" text-anchor="middle" font-family="Georgia, serif" font-size="56" letter-spacing="8" fill="#F6E9DF">M</text>
+    <text x="840" y="748" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="5" fill="#DCC8D2">MAISON</text>
+  </g>
+
+  <!-- main menu card -->
+  <g transform="rotate(-3 600 700)" filter="url(#shadow)">
+    <rect x="300" y="230" width="600" height="900" rx="3" fill="url(#paper)"/>
+    <rect x="324" y="254" width="552" height="852" rx="1" fill="none" stroke="#D6BFA8" stroke-width="1.2"/>
+    <rect x="340" y="270" width="520" height="820" rx="1" fill="none" stroke="#E4D3C2" stroke-width=".6"/>
+
+    <text x="600" y="372" text-anchor="middle" font-family="Georgia, serif" font-size="62" letter-spacing="12" fill="#2A2126">MAISON</text>
+    <text x="600" y="406" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="9" letter-spacing="6" fill="#8C6F84">FINE DINING · EST. 2019</text>
+    <path d="M520 434 h160" stroke="#C0A06A" stroke-width="1.2"/>
+    <circle cx="600" cy="434" r="2.4" fill="#C0A06A"/>
+
+    <text x="370" y="500" font-family="Helvetica Neue, Arial, sans-serif" font-size="11" letter-spacing="5" fill="#A9869B">STARTERS</text>
+    <g font-family="Georgia, serif" font-size="20" fill="#2A2126">
+      <text x="370" y="548">Burrata &amp; Heirloom</text>
+      <text x="370" y="596">Saffron Pumpkin Soup</text>
+      <text x="370" y="644">Citrus Cured Salmon</text>
+    </g>
+    <g font-family="Helvetica Neue, Arial, sans-serif" font-size="12" fill="#8C6F84">
+      <text x="830" y="548" text-anchor="end">14</text>
+      <text x="830" y="596" text-anchor="end">12</text>
+      <text x="830" y="644" text-anchor="end">16</text>
+    </g>
+    <g stroke="#DCC9B8" stroke-width=".9" stroke-dasharray="1 6">
+      <path d="M370 558 h460"/>
+      <path d="M370 606 h460"/>
+      <path d="M370 654 h460"/>
+    </g>
+
+    <text x="370" y="730" font-family="Helvetica Neue, Arial, sans-serif" font-size="11" letter-spacing="5" fill="#A9869B">MAINS</text>
+    <g font-family="Georgia, serif" font-size="20" fill="#2A2126">
+      <text x="370" y="778">Herb Roasted Lamb</text>
+      <text x="370" y="826">Truffle Tagliatelle</text>
+      <text x="370" y="874">Sea Bass &amp; Fennel</text>
+    </g>
+    <g font-family="Helvetica Neue, Arial, sans-serif" font-size="12" fill="#8C6F84">
+      <text x="830" y="778" text-anchor="end">32</text>
+      <text x="830" y="826" text-anchor="end">26</text>
+      <text x="830" y="874" text-anchor="end">30</text>
+    </g>
+    <g stroke="#DCC9B8" stroke-width=".9" stroke-dasharray="1 6">
+      <path d="M370 788 h460"/>
+      <path d="M370 836 h460"/>
+      <path d="M370 884 h460"/>
+    </g>
+
+    <text x="370" y="958" font-family="Helvetica Neue, Arial, sans-serif" font-size="11" letter-spacing="5" fill="#A9869B">DESSERTS</text>
+    <g font-family="Georgia, serif" font-size="20" fill="#2A2126">
+      <text x="370" y="1006">Pistachio Tart</text>
+      <text x="370" y="1054">Rose Panna Cotta</text>
+    </g>
+    <g font-family="Helvetica Neue, Arial, sans-serif" font-size="12" fill="#8C6F84">
+      <text x="830" y="1006" text-anchor="end">11</text>
+      <text x="830" y="1054" text-anchor="end">10</text>
+    </g>
+    <g stroke="#DCC9B8" stroke-width=".9" stroke-dasharray="1 6">
+      <path d="M370 1016 h460"/>
+      <path d="M370 1064 h460"/>
+    </g>
+    <text x="600" y="1114" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#A1907F">Bon appétit</text>
+  </g>
+
+  <!-- gold cutlery -->
+  <g stroke="#C0A06A" stroke-width="2.4" stroke-linecap="round" opacity=".9">
+    <path d="M150 700 v 330"/>
+    <path d="M120 700 v 120 M140 700 v 120 M160 700 v 120 M180 700 v 120"/>
+    <path d="M150 700 c -20 0 -30 30 -30 70 h 60 c 0 -40 -10 -70 -30 -70"/>
+    <path d="M1060 700 v 330"/>
+    <path d="M1060 700 c -18 0 -26 40 -26 90 c 0 40 26 50 26 50 c 0 0 26 -10 26 -50 c 0 -50 -8 -90 -26 -90 Z"/>
+  </g>
+
+  <!-- sprig -->
+  <g stroke="#8C6F84" fill="none" opacity=".4" stroke-linecap="round">
+    <path d="M180 380 c 40 -70 40 -140 20 -220" stroke-width="2"/>
+    <path d="M196 320 c -30 -16 -44 -42 -40 -70 c 26 6 40 30 40 70 Z" stroke-width="1.4"/>
+    <path d="M190 270 c 30 -14 44 -38 42 -66 c -26 4 -42 28 -42 66 Z" stroke-width="1.4"/>
+    <path d="M184 220 c -26 -14 -38 -36 -34 -60 c 22 4 36 26 34 60 Z" stroke-width="1.4"/>
+  </g>
+
+  <rect width="1200" height="1500" filter="url(#grain)" opacity=".16"/>
+</svg>
