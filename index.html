@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Tajawal:wght@300;400;500;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style.css">
   <script>
     (function () {
       document.documentElement.classList.add('js');
@@ -25,7 +25,7 @@
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
-  <a class="skip-link" href="#main" data-i18n="a11y.skip">تخطَّ إلى المحتوى</a>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">انتقل إلى المحتوى</a>
 
   <!-- ============ NAV ============ -->
   <header class="nav" id="nav">
@@ -61,6 +61,8 @@
 
   <!-- ============ MOBILE MENU ============ -->
   <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+
+
     <div class="mobile-menu__inner">
       <nav class="mobile-menu__nav" aria-label="Mobile">
         <a href="#home" data-i18n="nav.home">الرئيسية</a>
@@ -70,6 +72,7 @@
         <a href="#contact" data-i18n="nav.contact">تواصل معي</a>
       </nav>
       <div class="mobile-menu__footer">
+
         <a href="mailto:hello@creativetouch.studio">hello@creativetouch.studio</a>
         <div class="mobile-menu__socials">
           <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
@@ -93,15 +96,15 @@
         <div class="hero__content">
           <p class="eyebrow reveal">
             <span class="eyebrow__line"></span>
-            <span data-i18n="hero.eyebrow">أهلاً بكِ في عالمي الإبداعي</span>
+            <span data-i18n="hero.eyebrow">أهلا بك في عالمي الإبداعي</span>
           </p>
 
           <h1 class="hero__title reveal" style="--d:80ms">
-            <span data-i18n="hero.titleA">أصمّم علامات تجارية</span>
+            <span data-i18n="hero.titleA">أصمم علامات تجارية</span>
             <em data-i18n="hero.titleB">بلمسة ناعمة.</em>
           </h1>
 
-          <p class="hero__desc reveal" style="--d:160ms" data-i18n="hero.desc">مصمّمة جرافيك ومديرة فنية، أحوّل الأفكار إلى هويّات بصرية أنيقة وهادئة، تروي قصص العلامات وتترك أثرًا لا يُنسى.</p>
+          <p class="hero__desc reveal" style="--d:160ms" data-i18n="hero.desc">مصممة جرافيك ومديرة فنية، أحول الأفكار إلى هويات بصرية أنيقة وهادئة، تروي قصص العلامات وتترك أثرا لا ينسى.</p>
 
           <div class="hero__actions reveal" style="--d:240ms">
             <a href="#work" class="btn btn--dark">
@@ -113,23 +116,23 @@
 
           <div class="hero__stats reveal" style="--d:320ms">
             <div class="stat">
-              <span class="stat__num" data-count="6">0</span><span class="stat__suffix">+</span>
+              <span class="stat__value"><span class="stat__num" data-count="6">0</span><span class="stat__suffix">+</span></span>
               <span class="stat__label" data-i18n="hero.stat1">سنوات من الخبرة</span>
             </div>
             <div class="stat">
-              <span class="stat__num" data-count="120">0</span><span class="stat__suffix">+</span>
-              <span class="stat__label" data-i18n="hero.stat2">مشروعًا منجزًا</span>
+              <span class="stat__value"><span class="stat__num" data-count="120">0</span><span class="stat__suffix">+</span></span>
+              <span class="stat__label" data-i18n="hero.stat2">مشروعا منجزا</span>
             </div>
             <div class="stat">
-              <span class="stat__num" data-count="45">0</span><span class="stat__suffix">+</span>
-              <span class="stat__label" data-i18n="hero.stat3">عميلًا سعيدًا</span>
+              <span class="stat__value"><span class="stat__num" data-count="45">0</span><span class="stat__suffix">+</span></span>
+              <span class="stat__label" data-i18n="hero.stat3">عميلا سعيدا</span>
             </div>
           </div>
         </div>
 
         <div class="hero__visual reveal" style="--d:200ms">
           <div class="hero__frame">
-            <img src="assets/images/hero.svg" alt="لوحة إبداعية بألوان الكريم والوردي الباهت والموف" width="1000" height="1250" data-i18n-alt="alt.hero">
+<img src="hero.svg" alt="لوحة إبداعية بألوان الكريم والوردي الباهت والموف" width="1000" height="1250" data-i18n-alt="alt.hero">
           </div>
 
           <div class="hero__card">
@@ -184,7 +187,7 @@
         <div class="about__grid">
           <div class="about__visual reveal">
             <div class="about__frame">
-              <img src="assets/images/about.svg" alt="مكتب مصممة الجرافيك: دفتر رسم ولوحة ألوان وجهاز لوحي" width="1000" height="1250" loading="lazy" data-i18n-alt="alt.about">
+              <img src="about.svg" alt="مكتب مصممة الجرافيك: دفتر رسم ولوحة ألوان وجهاز لوحي" width="1000" height="1250" loading="lazy" data-i18n-alt="alt.about">
             </div>
             <div class="about__exp">
               <span class="about__exp-num">6+</span>
@@ -192,7 +195,7 @@
             </div>
             <blockquote class="about__quote">
               <p data-i18n="about.quote">«التصميم هو السفير الصامت لعلامتك.»</p>
-              <cite>— Paul Rand</cite>
+              <cite data-i18n="about.quoteBy">— باول راند</cite>
             </blockquote>
           </div>
 
@@ -203,10 +206,10 @@
               <span data-i18n="about.label">من أنا</span>
             </p>
             <h2 class="section__title">
-              <span data-i18n="about.titleA">مصمّمة تؤمن بأن</span>
+              <span data-i18n="about.titleA">مصممة تؤمن بأن</span>
               <em data-i18n="about.titleB">الجمال في التفاصيل.</em>
             </h2>
-            <p class="lead" data-i18n="about.p1">مرحبًا، أنا ليلى حسن — مصمّمة جرافيك ومديرة فنية مقيمة في دبي. منذ أكثر من ست سنوات، أساعد العلامات الطموحة على التعبير عن نفسها من خلال هويّات بصرية مدروسة، وتغليف يلامس الحواس، وتصاميم رقمية تتنفّس مساحة وهدوءًا.</p>
+            <p class="lead" data-i18n="about.p1">مرحبا، أنا ليلى حسن — مصممة جرافيك ومديرة فنية مقيمة في دبي. منذ أكثر من ست سنوات، أساعد العلامات الطموحة على التعبير عن نفسها من خلال هويات بصرية مدروسة، وتغليف يلامس الحواس، وتصاميم رقمية تتنفس مساحة وهدوءا.</p>
             <p class="muted" data-i18n="about.p2">أستلهم من الهدوء، والضوء الطبيعي، والألوان الترابية الناعمة. أؤمن أن التصميم الجيد لا يصرخ؛ بل يهمس بوضوح، ويبقى في الذاكرة.</p>
 
             <div class="tools">
@@ -229,7 +232,7 @@
 
             <div class="about__sign">
               <span class="about__sign-name">Layla Hassan</span>
-              <span class="about__sign-role" data-i18n="about.role">المؤسِّسة والمديرة الفنية</span>
+              <span class="about__sign-role" data-i18n="about.role">المؤسسة والمديرة الفنية</span>
             </div>
           </div>
         </div>
@@ -248,7 +251,7 @@
             </p>
             <h2 class="section__title">
               <span data-i18n="work.titleA">أعمال مختارة،</span>
-              <em data-i18n="work.titleB">صُنعت بعناية.</em>
+              <em data-i18n="work.titleB">صنعت بعناية.</em>
             </h2>
           </div>
           <p class="section__desc" data-i18n="work.desc">مجموعة من المشاريع التي جمعت بين الاستراتيجية والذوق البصري — من الهوية إلى التغليف والتصاميم الرقمية.</p>
@@ -274,7 +277,7 @@
               <em data-i18n="skills.titleB">صناعة الجمال.</em>
             </h2>
           </div>
-          <p class="section__desc" data-i18n="skills.desc">مزيج من الحسّ الفني والانضباط البصري، أطبّقه في كل تفصيل — من اختيار الحرف إلى بناء الشبكة.</p>
+          <p class="section__desc" data-i18n="skills.desc">مزيج من الحس الفني والانضباط البصري، أطبقه في كل تفصيل — من اختيار الحرف إلى بناء الشبكة.</p>
         </div>
 
         <div class="skills__grid">
@@ -370,10 +373,10 @@
               <span data-i18n="contact.label">تواصل معي</span>
             </p>
             <h2 class="contact__title">
-              <span data-i18n="contact.titleA">لنصنع شيئًا</span>
-              <em data-i18n="contact.titleB">جميلاً معًا.</em>
+              <span data-i18n="contact.titleA">لنصنع شيئا</span>
+              <em data-i18n="contact.titleB">جميلا معا.</em>
             </h2>
-            <p class="contact__desc" data-i18n="contact.desc">لديك مشروع أو فكرة؟ أحب أن أسمع عنها. أرد عادةً خلال ٢٤ ساعة.</p>
+            <p class="contact__desc" data-i18n="contact.desc">لديك مشروع أو فكرة؟ أحب أن أسمع عنها. أرد عادة خلال ٢٤ ساعة.</p>
 
             <ul class="contact__list">
               <li>
@@ -443,7 +446,7 @@
           <span class="logo__sub" data-i18n="logo.sub">Graphic Design Studio</span>
         </span>
       </a>
-      <p class="footer__copy"><span data-i18n="footer.rights">© 2026 Creative Touch. جميع الحقوق محفوظة.</span> <span data-i18n="footer.love">صُمم بحب وذوق.</span></p>
+      <p class="footer__copy"><span data-i18n="footer.rights">© 2026 Creative Touch. جميع الحقوق محفوظة.</span> <span data-i18n="footer.love">صمم بحب وذوق.</span></p>
       <button class="footer__top" id="backTop" type="button">
         <span data-i18n="footer.top">إلى الأعلى</span>
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -487,6 +490,7 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="assets/js/app.js"></script>
+ <script src="app.js"></script> 
 </body>
-</html>
+  </html>
+<
